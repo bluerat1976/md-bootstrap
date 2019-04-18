@@ -4,7 +4,11 @@
   "description": "md bootstrap",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint *.js",
+    "lint:fix": "eslint *.js --fix",
+    "pretest": "npm run lint",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "repository": {
     "type": "git",
